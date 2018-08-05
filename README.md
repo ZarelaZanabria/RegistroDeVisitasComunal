@@ -1,4 +1,4 @@
-# COMUNAL•VISIT - Registro de visitas de © Comunal Coworking
+# COMUNAL•VISIT - Registro de visitas
 
 ## Introducción
 Comunal es un espacio de coworking que ofrece a sus clientes de distintos tipos de emprendimiento como startups, freelancers y pequeñas empresas, ambientes para poder trabajar con una cultura de comunidad y colaboración; es por este motivo que las oficinas de Comunal son diariamente visitadas por una gran cantidad de personas, no sólo colaboradores de las empresas, sino también invitados, postulantes y personal externo. En este contexto, el registro de todas estas personas es realizado por el personal de seguridad y/o recepción de forma manual, pidiendo su documento de identidad, apuntando con papel y lápiz la información de dicho visitante y avisando por anexo telefónico al receptor.
@@ -29,7 +29,7 @@ Diseñamos un Wireframe inicial como guía principal para el desarrollo del prod
 * Una tercera con la pantalla de verificador de estado de visita, donde el solicitante puede validar si su anfitrión aceptó la visita programada.
 * Una cuarta con la opción de modo administrador para verificar los ingresos y salidas diarios de visitantes por parte del personal autorizado de © Comunal Coworking.
 
-![Wireframe](imgs-readme/wireframe.jpg)
+![Wireframe](imgs-readme/wireframe.png)
 
 
 #### Prototipo de alta fidelidad - 1ra versión
