@@ -11,16 +11,8 @@ function inicializar() {
   formUsers = document.getElementById('form-users');
   //Creamos un evento en donde al hacer click ejecutamos la funcion ubmitUsersFirebase
   formUsers.addEventListener('submit', submitUsersFirebase, false);
-
-  /*   tbodyTableUsers = document.getElementById('tbody-table-users'); */
-
-  //Indicamos la base de datos que vamos conectar
-  //Hace referente al hijo del modo raiz de la base de datos
-
   refUsers = firebase.database().ref().child('Visitantes');
-
 }
-
 
 
 const submitUsersFirebase = (event) => {
