@@ -6,6 +6,7 @@ function loginAdmin() {
 		.then(() => {
 			let user = firebase.auth().currentUser;
 			localStorage.setItem("user", JSON.stringify(user));
+			window
 			console.log("Usuario inició sesión con éxito");		
 		})
 	.catch((error) => {
