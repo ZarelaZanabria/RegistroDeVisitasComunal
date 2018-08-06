@@ -10,7 +10,7 @@ El presente proyecto COMUNAL•VISITOR, busca crear un registro de visitas digit
 ## Proceso de planeamiento
 La fase inicial de planeamiento involucra la utilización del método Kanban para tener un avance de forma incremental detallado en el Product Backlog:
 
-![Backlog](src/img/backlog.png).
+![Backlog](src/img/backlog.png)
 
 Para completar el proyecto nos organizamos como un equipo multifuncional de tres developers, la estructura que se asumió es de una Ux Designer y dos Front-ends, liderando áreas específicas de trabajo: 
 * UX Designer
