@@ -5,9 +5,9 @@ function loginAdmin() {
 	firebase.auth().signInWithEmailAndPassword(userLoginName, userLoginPassword)
 		.then(() => {
 			let user = firebase.auth().currentUser;
-			localStorage.setItem("user", JSON.stringify(user));
-			window
+			localStorage.setItem("user", JSON.stringify(user));			
 			console.log("Usuario inició sesión con éxito");		
+			window.location="vistaVisitas.html";
 		})
 	.catch((error) => {
 			console.log("Error de firebase > Código > " + error.code);
