@@ -1,4 +1,4 @@
-<span style="display:block;text-align:center; font-size:25px;">COMUNAL•VISITOR - Registro de visitas</span>
+# <span style="display:block;text-align:center">COMUNAL•VISITOR - Registro de visitas</span>
 
 <span style="display:block;text-align:center;">![lOGO](src/img/logoreadme.png)</span>
 
