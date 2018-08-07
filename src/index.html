@@ -8,37 +8,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="img/logofondo.png" type="image/x-icon">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-    crossorigin="anonymous">
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-
-
-  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-  <script src="main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" />
 </head>
 
-<body>
-
-  <div class="logo">
-    <img src="img/logo.png" alt="">
-  </div>
-  <div class="options">
-    <div class="row option1">
-      <a class="btn white black-text text-darken-2 fullWidth" href="./html/registroUsuario.html"><p class="lead">Registra tu visita</p></a>
+<body class="background-dark">
+  <div class="container">
+    <div class="row">
+      <p class="bienvenida white-text fullWidth">Bienvenido al centro de
+        <br> visitas de © Comunal</p>
+      <div class="logo center">
+        <div class="row pd">
+          <img src="img/logofondo.png" alt="">
+        </div>
+        <div class="row">
+          <a class="btn white black-text fullWidth" href="./html/registroUsuario.html">Solicita una visita</a>
+        </div>
+        <div class="row">
+          <div class="row">
+            <a class="btn white black-text fullWidth" href="./html/loginUser.html">Administrador</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row option1">
-      <a class="btn white black-text text-darken-2 fullWidth" href="./html/loginUser.html"><p class="lead">Administrador</p></a>
-    </div>
   </div>
-
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
