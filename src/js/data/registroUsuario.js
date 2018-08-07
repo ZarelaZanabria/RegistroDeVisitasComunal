@@ -17,6 +17,9 @@ function inicializar() {
 }
 
 const submitUsersFirebase = (event) => {
+  let dateTime = new Date();
+  let nowDateTime = dateTime.getDate() + '/' + (dateTime.getMonth() +1) + '/' + dateTime.getFullYear() +
+                    ' ' + dateTime.getHours() + ':' + dateTime.getMinutes();
   event.preventDefault();
   switch (modo) {
     case CREATE:
@@ -25,25 +28,21 @@ const submitUsersFirebase = (event) => {
         usersLastName: event.target.usersLastName.value,
         usersDni: event.target.usersDni.value,
         usersOficina: event.target.usersOficina.value,
-        usersMotivo: event.target.usersMotivo.value,
         usersAnfitrion: event.target.usersAnfitrion.value,
+        usersEmail: event.target.usersEmail.value,
+        userTime : nowDateTime,
         /* usersPhoto: event.target.usersFoto.value */
       });
-
       break;
-
     default:
       break;
   }
-
   //Para borrar una vez que guarda los archivos
   formUsers.reset();
 }
 
 const showDataVisit = () => {
-
   //Quiero que cada que este en value , me hague algo
-
   refUsers.on('value', function (snap) {
       //Vamos a obtener los valores de la base de datos User
       let dataUsers = snap.val();
@@ -58,8 +57,9 @@ const showDataVisit = () => {
               '<td>' + dataUsers[dataUser].usersLastName + '</td>' +
               '<td>' + dataUsers[dataUser].usersDni + '</td>' +
               '<td>' + dataUsers[dataUser].usersOficina + '</td>' +
-              '<td>' + dataUsers[dataUser].usersMotivo + '</td>' +
-              '<td>' + dataUsers[dataUser].usersAnfitrion + '</td>' +
+               '<td>' + dataUsers[dataUser].usersAnfitrion + '</td>' +
+               '<td>' + dataUsers[dataUser].usersEmail + '</td>' +
+              '<td>' + dataUsers[dataUser].userTime + '</td>' +
               '<td>' + dataUsers[dataUser].usersAnfitrion + '</td>' +
               '<td>' +
               '</td>' +

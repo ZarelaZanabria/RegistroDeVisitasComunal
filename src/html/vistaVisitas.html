@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +19,10 @@
 </head>
 
 <body>
+  <header>
+    <button id="btnCollaborator">Registrar Colaboradores</button>
+    <button id="btnOut">Salir</button>
+  </header>
   <div class="container">
     <div class="row">
       <div class="col-sm-1">
@@ -41,24 +44,26 @@
               <th>Apellido</th>
               <th>Dni</th>
               <th>Oficina a visitar</th>
-              <th>Motivo</th>
               <th>Anfitrion</th>
+              <th>E-mail</th>
+              <th>Hora de registro</th>
               <th>Foto</th>
-
             </tr>
           </thead>
-          <!-- Para el cuerpo  -->
+          <!-- Para el cuerpo aqui se muestra los datos -->
           <tbody id="tbody-table-users">
-
           </tbody>
-
         </table>
       </div>
     </div>
   </div>
-  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-  <script src="/src/js/main/registroUsuario.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>  
+  <script src="/src/js/data/logout.js"></script>
+  <script src="/src/js/main/userAdmin.js"></script>
+  <script src="/src/js/main/logout.js"></script>
+  <script src="/src/js/data/registroUsuario.js"></script>
   <script src="/src/js/conexion.js"></script>
+  
 </body>
 
 </html>
