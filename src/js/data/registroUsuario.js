@@ -10,7 +10,7 @@ function inicializar() {
   //Seleccionamos el formulario Usuario.
   formUsers = document.getElementById('form-users');
   //Creamos un evento en donde al hacer click ejecutamos la funcion ubmitUsersFirebase
-  formUsers.addEventListener('submit', submitUsersFirebase, false);  
+  formUsers.addEventListener('submit', submitUsersFirebase, false);
   refUsers = firebase.database().ref().child('Visitantes');
   tbodyTableUsers = document.getElementById('tbody-table-users');
   showDataVisit();
@@ -18,9 +18,9 @@ function inicializar() {
 
 const submitUsersFirebase = (event) => {
   let dateTime = new Date();
-  let nowDateTime = dateTime.getDate() + '/' + (dateTime.getMonth() +1) + '/' + dateTime.getFullYear() +
-                    ' ' + dateTime.getHours() + ':' + dateTime.getMinutes();
-  event.preventDefault();
+  let nowDateTime = dateTime.getDate() + '/' + (dateTime.getMonth() + 1) + '/' + dateTime.getFullYear() +
+    ' ' + dateTime.getHours() + ':' + dateTime.getMinutes();
+   event.preventDefault();
   switch (modo) {
     case CREATE:
       refUsers.push({
@@ -30,7 +30,7 @@ const submitUsersFirebase = (event) => {
         usersOficina: event.target.usersOficina.value,
         usersAnfitrion: event.target.usersAnfitrion.value,
         usersEmail: event.target.usersEmail.value,
-        userTime : nowDateTime,
+        userTime: nowDateTime,
         /* usersPhoto: event.target.usersFoto.value */
       });
       break;
@@ -44,31 +44,31 @@ const submitUsersFirebase = (event) => {
 const showDataVisit = () => {
   //Quiero que cada que este en value , me hague algo
   refUsers.on('value', function (snap) {
-      //Vamos a obtener los valores de la base de datos User
-      let dataUsers = snap.val();
-      //Filas iniciliza vacio.
-      let toRows = '';
-      //vamos a recorrer el arrary Usuarios.
-      for (const dataUser in dataUsers) {
-          //Generar una filas 
-          //toRows es un string con todas los datos a mostrar
-          toRows += '<tr>' +
-              '<td>' + dataUsers[dataUser].usersName + '</td>' +
-              '<td>' + dataUsers[dataUser].usersLastName + '</td>' +
-              '<td>' + dataUsers[dataUser].usersDni + '</td>' +
-              '<td>' + dataUsers[dataUser].usersOficina + '</td>' +
-               '<td>' + dataUsers[dataUser].usersAnfitrion + '</td>' +
-               '<td>' + dataUsers[dataUser].usersEmail + '</td>' +
-              '<td>' + dataUsers[dataUser].userTime + '</td>' +
-              '<td>' + dataUsers[dataUser].usersAnfitrion + '</td>' +
-              '<td>' +
-              '</td>' +
-              '<td>' +            
-              '</tr>';
-      }
+    //Vamos a obtener los valores de la base de datos User
+    let dataUsers = snap.val();
+    //Filas iniciliza vacio.
+    let toRows = '';
+    //vamos a recorrer el arrary Usuarios.
+    for (const dataUser in dataUsers) {
+      //Generar una filas 
+      //toRows es un string con todas los datos a mostrar
+      toRows += '<tr>' +
+        '<td>' + dataUsers[dataUser].usersName + '</td>' +
+        '<td>' + dataUsers[dataUser].usersLastName + '</td>' +
+        '<td>' + dataUsers[dataUser].usersDni + '</td>' +
+        '<td>' + dataUsers[dataUser].usersOficina + '</td>' +
+        '<td>' + dataUsers[dataUser].usersAnfitrion + '</td>' +
+        '<td>' + dataUsers[dataUser].usersEmail + '</td>' +
+        '<td>' + dataUsers[dataUser].userTime + '</td>' +
+        '<td>' + dataUsers[dataUser].usersAnfitrion + '</td>' +
+        '<td>' +
+        '</td>' +
+        '<td>' +
+        '</tr>';
+    }
 
-      tbodyTableUsers.innerHTML = toRows;
-     
+    tbodyTableUsers.innerHTML = toRows;
+
   });
 
 }
