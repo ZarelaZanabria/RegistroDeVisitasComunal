@@ -1,4 +1,4 @@
-# <span style="display:block;text-align:center">COMUNAL•VISITOR - Registro de visitas</span>
+# <span style="display:block;text-align:center"> COMUNAL•VISITOR - Registro de visitas</span>
 
 <span style="display:block;text-align:center;">![lOGO](src/img/logoreadme.png)</span>
 
@@ -54,7 +54,7 @@ Diseñamos un [Primer prototipo de alta fidelidad](https://www.figma.com/proto/E
 
 #### 3.2.3. Testing de usuario con prototipo:
 
-*Insertar foto con usuario testeado*
+![TestUser](src/img/usertest.png)
 
 El usuario testeado identifica la simplicidad del producto, aunque advierte la suceptibilidad del filtro de seguridad al permitir el registro libre de administradores para loguearse y obtener la información de los visitantes, detalla que en la pantalla de administrador que el filtro por nombre de visitante no es necesario y basta con el filtro por oficina visitada, al su vez, en la solicitud de visita si es que se solicita un correo al visitante, este debería ser utilizado para notificarle sobre la recepción de su solicitud y posterior confirmación.
 
@@ -73,7 +73,7 @@ El usuario testeado identifica la simplicidad del producto, aunque advierte la s
 
 
 #### Entrevita 1 y 2 : Diego e Ivanna de la administración de © Comunal Coworking:
-![Backlog](src/img/diegoivanna.png)
+![Interview](src/img/diegoivanna.png)
 
 #### Respuestas:
 
@@ -88,7 +88,7 @@ El usuario testeado identifica la simplicidad del producto, aunque advierte la s
 
 #### 3.3.2. Relación de preguntas hacia el anfitrión:
 
-1. ¿Cuántas visitas recibe Laboratoria en promedio mensualmente?
+1. ¿Cuántas visitas recibes en promedio mensualmente?
 2. ¿Respecto a esos visitantes, qué porcentaje son personas totalmente nuevas?
 3. ¿Qué tipo de información de esas personas nuevas te gustaría que se almancene?
 4. ¿Si una persona externa a Laboratoria quiere visitarte qué es lo que debes hacer para permitirle el ingreso?
@@ -97,21 +97,18 @@ El usuario testeado identifica la simplicidad del producto, aunque advierte la s
 7. Respecto a la pregunta anterior, Comunal Coworking espera no perder la parte del contacto humano al recibir a una persona y por eso no implementa sistemas de registro digitales, ¿Respecto a eso, qué opinas?
 8. ¿Si Comunal implementara un sistema de registro digital de sus visitas, cómo te gustaría que fuese el proceo?
 
-#### Entrevita 3: Alejandra de Laboratoria, empresa que labora dentro de Comunal:
-
-*Insertar foto entrevita a Alejandra*
+#### Entrevita 3: Beatriz Castiglia de Laboratoria, empresa que labora dentro de Comunal:
 
 #### Respuestas:
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-
+1. Normalmente Laboratoria recibe muchas visitas, pero yo particularmente recibo alrededor de 3 externos mensualmente.
+2. Las personas recurrentes que proveen servicios son muy constantes, pero existen varias personas nuevas que vienen a visitarnos, son esas 3 que menciono.
+3. No es necesario saber más información fuera de su nombre y DNI, pues lo demás lo charlamos personalmente y es común que con anticipación sepamos el motivo de la visita.
+4. Tengo que avisar a Comunal y Comunal avisa al edificio, hay ocasiones donde pasa directamente si ya se ha informado de su llegada, además tenemos un grupo de whatsapp de Laboratoria con Comunal, ahi nos escriben e informamos como procedemos.
+5. Nunca he tenido un inconveniente con una visita.
+6. Creo es mucho más útil, una vez pedí que me dieran un estacionamiento para un visitante, y el registro era muy complicado, tedioso y sin sentido. Poco eficiente.
+7. Es totalmente acertado, me encanta poder realizar aplicaciones pero no necesariamente funciona. Por esto debe haber un punto intermedio entre la tecnología y el contacto humano.
+8. Simple y sencillo, no me gusta cuando algo se vuelve muy complicado por las puras, la actitud que te recibe pesa mucho y también disposición para atenderte.
 
 ### 3.4. Cliente incógnito:
 
