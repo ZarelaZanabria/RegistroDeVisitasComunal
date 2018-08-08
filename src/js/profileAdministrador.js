@@ -13,22 +13,22 @@ firebase.database().ref('Visitantes/').on('value', function(snap){
   visitObjects = Object.keys(snap.val());
   visitObjects.forEach(function(element) {
     if(localStorage.currentAdminEmail == snap.val()[element].usersAnfitrionEmail) {
-      var storageRef = firebase.storage().ref(snap.val()[element].usersAnfitrionEmail +'.jpg');
+      myURLPhotoUser = 'photos/'+ snap.val()[element].usersDni +'.jpg';
+      var storageRef = firebase.storage().ref(myURLPhotoUser);
       storageRef.getDownloadURL().then(function(url) {
-        console.log(url);
-        // document.getElementById('divImagenesStorage').innerHTML = `<img src=${url} />`;
+        
+        document.getElementById('adminVisitas').innerHTML += `
+        <tr>
+          <td>${snap.val()[element].userTime}</td>
+          <td>${snap.val()[element].usersDni}</td>
+          <td>${snap.val()[element].usersEmail}</td>
+          <td>${snap.val()[element].usersName}</td>
+          <td>${snap.val()[element].usersLastName}</td>
+          <td><img src=${url} width='50px' /></td>
+        </tr>
+        `;
       });
 
-      document.getElementById('adminVisitas').innerHTML += `
-      <tr>
-        <td>${snap.val()[element].userTime}</td>
-        <td>${snap.val()[element].usersDni}</td>
-        <td>${snap.val()[element].usersAnfitrionEmail}</td>
-        <td>${snap.val()[element].usersName}</td>
-        <td>${snap.val()[element].usersLastName}</td>
-        
-      </tr>
-      `;
     }
   });
 })
