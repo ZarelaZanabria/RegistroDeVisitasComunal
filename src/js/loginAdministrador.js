@@ -21,8 +21,8 @@ function loginAdmin() {
 
 	firebase.auth().signInWithEmailAndPassword(userLoginName, userLoginPassword)
 		.then(() => {
-			let user = firebase.auth().currentUser;
-			localStorage.setItem("user", JSON.stringify(user));
+			let currentAdminEmail = firebase.auth().currentUser.email;
+			localStorage.currentAdminEmail = currentAdminEmail;
 			console.log("Usuario inició sesión con éxito");
 			window.location="profileAdministrador.html";
 		})

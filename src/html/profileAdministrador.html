@@ -10,8 +10,22 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-
-
+  <h1>Hola <span id="nameAdmin"></span> </h1>
+  <h2>Estas son tus visitas</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Hora Registro</th>
+        <th>Dni</th>
+        <th>Email</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Foto</th>
+      </tr>
+    </thead>
+    <tbody id="adminVisitas">
+    </tbody>
+  </table>
   <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
   <script src="../js/firebase.js"></script>
   <script src="../js/profileAdministrador.js"></script>
