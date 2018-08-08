@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="../img/logofondo.png" type="image/x-icon">
+  <title>Comunal•Visitor</title>
+  <link rel="stylesheet" href="../css/visitante.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Agregar logo malena -->
+  <div class="container" id="mainSection">
+    <div class="row">
+      <div class="col-sm-7">
+        <form id="form-users">
+          <div class="form-group">
+            <label for="users-mame">Nombres </label>
+            <input type="text" value="" class="form-control" id="users-name">
+          </div>
+          <div class="form-group">
+            <label for="users-last-name">Apellidos </label>
+            <input type="text" value="" class="form-control" id="users-last-name">
+          </div>
+          <div class="form-group">
+            <label for="users-dni">DNI </label>
+            <input type="text" value="" class="form-control" id="users-dni">
+            <span id="dniOK"></span>
+          </div>
+          <label for="">Seleccione Oficina</label>
+          <select class="selectpicker" data-live-search="true" id="users-oficina">
+            <option>Laboratoria</option>
+            <option>Enterprice-Inca</option>
+            <option>Insitum</option>
+          </select>
+          <label for="">Seleccione Anfitrion</label>
+          <select class="selectpicker" data-live-search="true" id="users-anfitrion"></select>
+          <div class="form-group">
+            <label for="users-email">E-mail</label>
+            <input type="text" value="" class="form-control" id="users-email">
+            <span id="emailOK"></span>
+          </div>
+          <br>
+          <input type="button" name="" value="Siguiente" id="next-Photo">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="photoSection">
+    <video id="myVideo" width="200" height="200" autoplay></video>
+    <br>
+    <button id="snap">Take photo</button>
+    <canvas id="micanvas" width="200" height="200"></canvas>
+    <br>
+    <button id="generarblob">Subir</button>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script src="../js/firebase.js"></script>
+  <script src="../js/validandoVisitante.js"></script>
+  <script src="../js/selectOptionsVisitante.js"></script>
+  <script src="../js/takeSnapshotPhotoVisitante.js"></script>
+</body>
+</html>

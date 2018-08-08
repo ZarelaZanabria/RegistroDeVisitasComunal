@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="../img/logofondo.png" type="image/x-icon">
+  <title>Comunal•Visitor</title>
+  <link rel="stylesheet" href="../css/administrador.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+  <div id="loginAdmin">
+    <form id="form-users">
+      <div class="form-group">
+        <label for="users-mame">Correo Electronico </label>
+        <input type="email" name="usersName" value="" class="form-control" id="usersLoginName" placeholder="Correo electrónico">
+      </div>
+      <div class="form-group">
+        <label for="users-last-name">Contraseña </label>
+        <input type="text" name="usersLastName" value="" class="form-control" id="usersLoginPassword" placeholder="Contraseña">
+      </div>
+      <input type="button" name="" value="Login" id="Enviar-Update"  onclick="loginAdmin()">
+
+      <div class="ingresarConCuenta">¿Aún no tienes cuenta?
+          <a class="entrar" id="btnRegisterAdmin">Regístrate</a>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="col-sm-7" id="registerAdmin">
+    <form id="form-users">
+      <div>
+        <p class="h1">
+          Registrate Comunal-Visit
+        </p>
+      </div>
+      <div class="form-group">
+        <label for="users-mame">Correo Electronico </label>
+        <input type="email" name="userName" value="" class="form-control" id="usersEmail" placeholder="Correo electrónico">
+      </div>
+      <div class="form-group">
+        <label for="users-last-name">Contraseña </label>
+        <input type="text" name="userPassword" value="" class="form-control" id="userPassword" placeholder="Contraseña">
+      </div>
+      <input type="button" name="" value="Registrase" id="Registro-Users" onclick="adminRegister()">
+      <input type="button" name="" value="Loguearse" id="Login-Admin">
+    </form>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script src="../js/firebase.js"></script>
+  <script src="../js/loginAdministrador.js"></script>
+</body>
+</html>

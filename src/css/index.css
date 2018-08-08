@@ -1,0 +1,27 @@
+.logo {
+  text-align: center;
+}
+.background-dark {
+  background-color: #000000;
+}
+.container{
+  margin:0px auto 0px auto;
+}
+.center {
+  text-align: center;
+}
+.btn {
+  color: #2a2a2a;
+  font-size: 30px;
+  width: 300px;
+  height: 120px;
+}
+img {
+  width: 300px;
+  height: 300px;
+}
+.bienvenida {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+}
