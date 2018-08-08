@@ -21,14 +21,13 @@
         <label for="users-last-name">Contraseña </label>
         <input type="text" name="usersLastName" value="" class="form-control" id="usersLoginPassword" placeholder="Contraseña">
       </div>
-      <input type="button" name="" value="Login" id="Enviar-Update"  onclick="loginAdmin()">
+      <input type="button" name="" value="Login" id="Enviar-Update">
 
       <div class="ingresarConCuenta">¿Aún no tienes cuenta?
           <a class="entrar" id="btnRegisterAdmin">Regístrate</a>
       </div>
     </form>
   </div>
-
 
   <div class="col-sm-7" id="registerAdmin">
     <form id="form-users">
@@ -38,6 +37,14 @@
         </p>
       </div>
       <div class="form-group">
+        <label for="users-mame">Nombre </label>
+        <input name="userName" value="" class="form-control" id="usersName" placeholder="Nombre">
+      </div>
+      <div class="form-group">
+        <label for="users-mame">Empresa </label>
+        <input name="userName" value="" class="form-control" id="usersOffice" placeholder="Empresa">
+      </div>
+      <div class="form-group">
         <label for="users-mame">Correo Electronico </label>
         <input type="email" name="userName" value="" class="form-control" id="usersEmail" placeholder="Correo electrónico">
       </div>
@@ -45,12 +52,10 @@
         <label for="users-last-name">Contraseña </label>
         <input type="text" name="userPassword" value="" class="form-control" id="userPassword" placeholder="Contraseña">
       </div>
-      <input type="button" name="" value="Registrase" id="Registro-Users" onclick="adminRegister()">
-      <input type="button" name="" value="Loguearse" id="Login-Admin">
+      <button type="button" name="button" id="Registro-Users">Registrar</button>
+      <button type="button" name="button" id="Login-Admin">Volver</button>
     </form>
   </div>
-
-
   <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
   <script src="../js/firebase.js"></script>
   <script src="../js/loginAdministrador.js"></script>
